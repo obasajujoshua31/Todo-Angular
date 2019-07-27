@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="my-5 alltodos-container">
+    <div
+      class="alltodos-item"
+      *ngFor="let post of posts"
+      routerLink="/post/{{ post.id }}"
+    >
+      <ul class="list-group">
+        <li class="list-group-item">{{ post.title }}</li>
+        <li class="list-group-item">{{ post.body }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
